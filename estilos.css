@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     background-color: lightgray;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #222;
 }
 
@@ -12,6 +14,7 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 p {
@@ -20,6 +23,7 @@ p {
 
 header p {
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 header {
@@ -38,6 +42,13 @@ section {
     background-color: ghostwhite;
     padding: 20px;
     margin-bottom: 20px;
+}
+
+.como {
+    background-color: pink;
+}
+#comoFunciona {
+    color: darkgreen;
 }
 
 footer {
