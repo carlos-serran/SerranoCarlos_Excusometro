@@ -132,3 +132,54 @@ footer p {
     font-size: 0.9em;
     font-weight: 700;
 }
+
+.panel-estado {
+    margin-top: 1.5em;
+    display: flex; /* Para mover las cajas dentro del padre, hay que dar primero las instrucciones al padre */
+    gap: 1em;
+    /* justify-content: space-around; */
+    
+}
+
+.dato-estado {
+    background-color: #ffffff;
+    color: #171717;
+    padding: 1em;
+    margin-bottom: 0.75em;
+    border: 0.15em solid #d7ff3f;
+    /* width: 100%; */
+    flex: 1; 
+    box-sizing: border-box; /* Generalmente se coloca box-sizing en todo el proyecto */
+}
+
+
+
+.etiqueta {
+    font-weight: 700;
+    display: block;
+    font-size: 0.85em;
+    margin-bottom: .3m;
+}
+
+.valor {
+    color: crimson;
+    display: inline-block;
+    background-color: #d7ff3f;
+    padding: .3em .6em;
+    border: 0.1em solid #171717;
+}
+
+.nivel-credibilidad {
+    display: inline-block;
+    background-color: crimson;
+    color: #ffffff;
+    padding: .3em .6em;
+    margin-left: .3em;
+}
+
+.grid-evidencias {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
