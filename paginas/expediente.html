@@ -4,23 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../estilos.css">
-    <title>Document</title>
+    <title>Expediente</title>
 </head>
 
 <body class="expediente">
 
-    <header>
+    <header class="cabecera-expediente">
+        <span class="sello-clasificado">CLASIFICADO</span>
         <p>ARCHIVO RARO Y SOSPECHOSO · REVISAR CON CAUTELA</p>
         <h1>Descripción del incidente</h1>
         <p>El sujeto afirma haber realizado la entrega</p>
     </header>
 
+    <nav>
+        <a href="../index.html">Home</a>
+    </nav>
+
     <main>
+
+        <section class="error">
+            <h2>Descripción del incidente</h2>
+
+            <img class="foto-caso" src="../img/pastor_aleman_sentado.jpg" alt="descripcion del incidente">
+
+            <p>Conjunto de incidencias que son irrevocables e irreversibles</p>
+        </section>
+
         <section class="evidencias">
             <h2>Evidencias del caso</h2>
             <p>Material recopilado</p>
-            <div class="grid/evidencias">
+            <div class="grid-evidencias">
                 <figure class="evidencia">
                     <img src="../img/detective_pixel_art.jpg" alt="Imagen de la evidencia 1">
                     <figcaption>
@@ -31,6 +50,12 @@
                     <img src="../img/evidencia_atmosfera.jpg" alt="Imagen de la evidencia 2">
                     <figcaption>
                         Evidencia 02
+                    </figcaption>
+                </figure>
+                <figure class="evidencia">
+                    <img src="../img/detective-expediente.jpg" alt="Imagen de la evidencia 3">
+                    <figcaption>
+                        Evidencia 03
                     </figcaption>
                 </figure>
             </div>

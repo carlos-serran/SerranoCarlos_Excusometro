@@ -1,55 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root {
-    --fondo: #0b0f19;
-    --texto: #f2f0e8;
-    --azul-claro: #051a51;
-    --azul-oscuro: #020c65;
-    --acento: #60a5fa;
-}
-
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--fondo);
-    color: var(--texto);
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #090a0f;
+    color: #e2e8f0;
     line-height: 1.6;
 }
 
 header {
-    background-color: var(--azul-claro);
+    background-color: #111827;
     text-align: center;
     padding: 60px 30px;
+    border-bottom: 2px solid #00ffcc;
 }
 
 header p {
-    color: var(--acento);
+    color: #00ffcc;
     font-weight: 700;
     margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h1 {
     color: #ffffff;
     font-size: 4rem;
     margin: 10px 0;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 10px #00ffcc;
 }
 
 nav {
-    background-color: var(--azul-oscuro);
+    background-color: #1f293d;
     text-align: center;
     padding: 16px;
+    border-bottom: 1px solid #9d4edd;
 }
 
 nav a {
-    color: var(--texto);
+    color: #e2e8f0;
     font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     margin: 0 12px;
 }
 
-nav a:hover,
-section a:hover {
-    color: var(--acento);
+nav a:hover, section a:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 8px #00ffcc;
 }
 
 main {
@@ -59,15 +56,19 @@ main {
 }
 
 section {
-    background-color: var(--azul-claro);
+    background-color: #111827;
     margin-bottom: 24px;
     padding: 30px;
+    border: 1px solid #1e293b;
 }
 
 h2 {
-    color: #f3f4f6;
+    color: #ffffff;
     font-size: 1.8rem;
     margin-top: 0;
+    font-family: 'Orbitron', sans-serif;
+    border-left: 4px solid #ff007f;
+    padding-left: 10px;
 }
 
 p {
@@ -75,22 +76,23 @@ p {
 }
 
 .excusa {
-    background-color: var(--azul-oscuro);
+    background-color: #1f293d;
     padding: 20px;
     margin-bottom: 16px;
+    border-left: 3px solid #00ffcc;
 }
 
 .excusa h3 {
-    color: var(--acento);
+    color: #00ffcc;
     margin-top: 0;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .como p {
-    color: var(--acento);
+    color: #00ffcc;
 }
 
-ul,
-ol {
+ul, ol {
     line-height: 1.9;
 }
 
@@ -99,16 +101,19 @@ li {
 }
 
 footer {
-    background-color: var(--azul-claro);
-    color: var(--acento);
+    background-color: #111827;
+    color: #00ffcc;
     text-align: center;
     padding: 24px;
+    border-top: 2px solid #9d4edd;
 }
 
 footer p {
     font-weight: 700;
     margin: 0;
 }
+
+/* --- Secciones especiales (expediente, evidencias y panel de estado) --- */
 
 .expediente header {
     background-image: url("img/evidencia_header.jpg");
@@ -117,9 +122,9 @@ footer p {
 }
 
 .evidencia {
-    background-color: #cecbcb;
+    background-color: #1f293d;
     padding: 1em;
-    border: 0.15em solid #171717;
+    border: 0.15em solid #00ffcc;
 }
 
 .evidencias img {
@@ -131,55 +136,92 @@ footer p {
     margin-top: 0.75em;
     font-size: 0.9em;
     font-weight: 700;
+    color: #00ffcc;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .panel-estado {
     margin-top: 1.5em;
-    display: flex; /* Para mover las cajas dentro del padre, hay que dar primero las instrucciones al padre */
+    display: flex;
     gap: 1em;
-    /* justify-content: space-around; */
-    
 }
 
 .dato-estado {
-    background-color: #ffffff;
-    color: #171717;
+    background-color: #1f293d;
+    color: #e2e8f0;
     padding: 1em;
     margin-bottom: 0.75em;
-    border: 0.15em solid #d7ff3f;
-    /* width: 100%; */
-    flex: 1; 
-    box-sizing: border-box; /* Generalmente se coloca box-sizing en todo el proyecto */
+    border: 0.15em solid #00ffcc;
+    flex: 1;
+    box-sizing: border-box;
 }
-
-
 
 .etiqueta {
     font-weight: 700;
     display: block;
     font-size: 0.85em;
-    margin-bottom: .3m;
+    margin-bottom: .3em;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .valor {
-    color: crimson;
+    color: #ffffff;
     display: inline-block;
-    background-color: #d7ff3f;
+    background-color: #ff007f;
     padding: .3em .6em;
-    border: 0.1em solid #171717;
+    border: 0.1em solid #00ffcc;
+    font-weight: 700;
 }
 
 .nivel-credibilidad {
     display: inline-block;
-    background-color: crimson;
+    background-color: #ff007f;
     color: #ffffff;
     padding: .3em .6em;
     margin-left: .3em;
+    font-weight: 700;
+    border: 0.1em solid #00ffcc;
 }
 
 .grid-evidencias {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
+}
+
+.cabecera-expediente {
+    position: relative;
+}
+
+.sello-clasificado {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: crimson;
+    color: ghostwhite;
+    padding: 0.4em 0.7em;
+    border: 0.15em solid ghostwhite;
+    font-weight: 700;
+}
+
+.aviso-sistema {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    background-color: #171717;
+    color: ghostwhite;
+    padding: .6em, 1em;
+    border: .1em solid ghostwhite;
+}
+
+.foto-caso {
+    width: 12em;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: .5em;
+    border: .15em solid #171717;
+}
+
+.error {
+    overflow: auto;
 }
