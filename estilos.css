@@ -36,13 +36,14 @@ nav {
     border-bottom: 1px solid #9d4edd;
 }
 
-nav a {
+nav a, a {
     color: #e2e8f0;
     font-weight: 700;
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     margin: 0 12px;
 }
+
 
 nav a:hover, section a:hover {
     color: #00ffcc;
@@ -113,7 +114,10 @@ footer p {
     margin: 0;
 }
 
-/* --- Secciones especiales (expediente, evidencias y panel de estado) --- */
+footer a:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 8px #00ffcc;
+}
 
 .expediente header {
     background-image: url("img/evidencia_header.jpg");
@@ -224,4 +228,59 @@ footer p {
 
 .error {
     overflow: auto;
+}
+
+.form-excusa {
+    max-width: 45em;
+    margin-top: 2em;
+}
+
+.campo {
+    margin-bottom: 1.5em;
+}
+
+.campo > label, fieldset > legend {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8em;
+    background-color: ghostwhite;
+    color: #171717;
+    border: 0.12em solid #171717;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 0.2em solid yellow;
+    outline-offset: 0.15em;
+}
+
+fieldset.campo {
+    padding: 1em;
+    border: .12em solid #171717;
+}
+
+fieldset.campo label{
+    display: block;
+    margin-bottom: 0.6em;
+}
+
+.form-excusa button {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    background-color: #171717;
+    color: yellow;
+    border: 0.12em solid #171717;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
 }
