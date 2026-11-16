@@ -98,7 +98,7 @@
         <section id="registro">
             <h2>Procedimiento para el registro de una excusa</h2>
             <p>Por favor ingresa los datos del incidente para registrar y evaluar el supuesto caso</p>
-            <form action="../recibida.html" class="form-excusa">
+            <form action="paginas/recibida.html" class="form-excusa">
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
                     <input id="nombre" type="text" required minlength="2" max="50">
@@ -112,23 +112,23 @@
                     <input id="fecha" type="date" required>
                 </div>
                 <div class="campo">
-                    <label for="drama">Nivel de Dramatismo Puro y DUro</label>
+                    <label for="drama">Nivel de Dramatismo Puro y Duro</label>
                     <select name="drama" id="drama" required>
                         <option value="">Selecciona un Nivel</option>
-                        <option value="bajo">Bajo</option>
+                        <option value="bajo">Show</option>
                         <option value="medio">Dramatismo</option>
                         <option value="alto">Rey/Reina del Drama</option>
                     </select>
                 </div>
                 <fieldset class="campo">
-                    <legend>Categoria principal</legend>
+                    <legend>Categoria de las excusas</legend>
                     <label for="">
                         <input type="radio" name="categoria" value="tecnica" required>
-                        Problema de técnico
+                        Show tecnico
                         <input type="radio" name="categoria" value="misterio" required>
-                        Problema de misterioso
+                        Drama misterioso
                         <input type="radio" name="categoria" value="organizacion" required>
-                        Problema de organización
+                        Excusa de organización
                     </label>
                 </fieldset>
                 <div class="campo campo-check">
@@ -141,7 +141,7 @@
                     <label for="excusa">Declaración completa</label>
                     <textarea name="excusa" id="excusa" rows="6" minlength="20" maxlength="500" required></textarea>
                 </div>
-                <a href=""><button type="submit">Validar excusa</button></a>
+                <button type="submit">Validar excusa</button>
             </form>
             <a href="#home">Home</a>
         </section>
