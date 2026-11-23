@@ -31,9 +31,13 @@ h1 {
 
 nav {
     background-color: #1f293d;
-    text-align: center;
-    padding: 16px;
+    /*text-align: center;*/
+    padding: 1em;
     border-bottom: 1px solid #9d4edd;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 nav a, a {
@@ -41,7 +45,7 @@ nav a, a {
     font-weight: 700;
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
-    margin: 0 12px;
+    /*margin: 0 12px;*/
 }
 
 
@@ -51,9 +55,10 @@ nav a:hover, section a:hover, a:hover {
 }
 
 main {
-    max-width: 900px;
+    width: 90%;
+    max-width: 56rem;
     margin: auto;
-    padding: 40px 30px;
+    padding: 2.5em 0;
 }
 
 section {
@@ -136,6 +141,11 @@ footer a:hover {
     display: block;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .evidencia figcaption {
     margin-top: 0.75em;
     font-size: 0.9em;
@@ -148,6 +158,7 @@ footer a:hover {
     margin-top: 1.5em;
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 .dato-estado {
@@ -284,3 +295,56 @@ fieldset.campo label{
     font-weight: bold;
     cursor: pointer;
 }
+
+@media (max-width: 48rem) {
+    body {
+        padding-bottom: 3em;
+    }
+    
+    .panel-estado {
+        flex-direction: column;
+    }
+
+    .grid-evidencias {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    header {
+        padding: 2.5em 1.5em;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+
+    .sello-clasificado {
+        position: static;
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+
+    .foto-caso {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+    .aviso-sistema {
+        left: 1em;
+        right: 1em;
+        bottom: 1em;
+        text-align: center;
+    }
+}
+/* % = son relativos a elemento padre */
+/* px = es relativo al root (el root = 16 puntos) se multiplica el pixel por 16 */
